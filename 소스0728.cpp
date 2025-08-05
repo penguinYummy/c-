@@ -487,12 +487,214 @@
 //	}
 //	return 0;
 //}
+//#include <stdio.h>
+//int main()
+//{
+//	int input;
+//	printf("input을 입력하세요 :");
+//	scanf("%d", &input);
+//	if (input % 3 == 0)
+//	{
+//		printf("input은 3의 배수입니다."); 
+//		if (input % 6 == 0)
+//		{
+//			printf("input은 6의 배수입니다.");
+//		}
+//		if (input % 9 == 0)
+//		{
+//			printf("input은 9의 배수입니다.");
+//		}
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	char command = 'i';
+//	switch (command)
+//	{
+//	case 'i':
+//		printf("아이템창 오픈\n");
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	char command = 'i';
+//	switch (command)
+//	{
+//	case 'i':
+//		printf("아이템창 오픈\n");
+//	case 'm':
+//		printf("지도창 오픈\n");
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	char command = 'm';
+//	switch (command)
+//	{
+//	case 'i':
+//		printf("아이템창 오픈\n");
+//	case 'm':
+//		printf("지도창 오픈\n");
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	char command = 'm';
+//	switch (command)
+//	{
+//	case 'i':
+//		printf("아이템창 오픈\n");
+//		break;
+//	case 'm':
+//		printf("지도창 오픈\n");
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	char command;
+//	printf("커맨드를 입력하세요:");
+//	scanf("%c", &command);
+//	switch (command)
+//	{
+//	case 'i':
+//		printf("아이템창 오픈\n");
+//		break;
+//	case 'm':
+//		printf("지도창 오픈\n");
+//		break;
+//	default:printf("지정된 기능이 없습니다.\n");
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	char number = 1;
+//	switch (number)
+//	{
+//	case 1: printf("one\n"); break;
+//	case 2: printf("two\n"); break;
+//	case 3: printf("three\n"); break;
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int input1, input2;
+//	char oper;
+//	printf("두개의 수를 입력 :");
+//	scanf("%d %d", &input1, &input2);
+//	printf("기호를 입력 :");
+//	scanf(" %c", &oper);
+//	switch (oper)
+//	{
+//	case '+': printf("%d + %d = %d", input1, input2, input1 + input2); break;
+//	case '-': printf("%d - %d = %d", input1, input2, input1 - input2); break;
+//	case '*': printf("%d * %d = %d", input1, input2, input1 * input2); break;
+//	case '/': printf("%d / %d = %d", input1, input2, input1 / input2); break;
+//	case '%': printf("%d %% %d = %d", input1, input2, input1 % input2); break;
+//	case '\n': printf("enter"); break;
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int month;
+//	printf("month 입력 :");
+//	scanf("%d", &month);
+//	switch (month)
+//	{
+//	case 1: 
+//		printf("January");
+//		break;
+//	case 2:
+//		printf("February");
+//		break;
+//	case 3:
+//		printf("March");
+//		break;
+//	case 4:
+//		printf("April");
+//		break;
+//	case 5:
+//		printf("May");
+//		break;
+//	case 6:
+//		printf("June");
+//		break;
+//	case 7:
+//		printf("July");
+//		break;
+//	case 8:
+//		printf("August");
+//		break;
+//	case 9:
+//		printf("September");
+//		break;
+//	case 10:
+//		printf("October");
+//		break;
+//	case 11:
+//		printf("November");
+//		break;
+//	case 12:
+//		printf("December");
+//		break;
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	char command;
+//	printf("<, a 왼쪽 이동 \n");
+//	printf(">, d 오른쪽이동 \n");
+//	scanf("%c", &command);
+//	switch (command)
+//	{
+//	case '<':
+//	case 'a':
+//		printf("왼쪽으로 이동합니다.\n");
+//		break;
+//	case '>': case 'd':
+//		printf("오른쪽으로 이동합니다.\n");
+//		break;
+//	}
+//	return 0;
+//}
 #include <stdio.h>
 int main()
 {
-	int input;
-	if (input % 9 == 0)
+	int number;
+	int option = 3;
+	printf("메뉴를 선택하세요");
+	printf("1.새 게임 3.이어하기 3.옵션\n");
+	scanf("%d", &input);
+	switch (input)
 	{
-		print("input은 9의 배수입니다")
+	case 1:
+		printf("새 게임 시작.\n");
+		break;
+	case 2:
+		printf("세이브 데이터 로드.\n");
+		break;
+	case option:
+		printf("옵션 세팅.\n");
+		break;
+	default:
+		printf("지정된 기능이 없습니다.\n");
 	}
+	return 0;
 }
