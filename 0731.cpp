@@ -148,3 +148,185 @@
 //	printf("%d = %d %% 50", a % 50, a);
 //	return 0;
 //}
+//#include  <stdio.h>
+//int main()
+//{
+//	while (0)
+//	{
+//		printf("조건이 참일 경우 반복 출력\n");
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	while (1)
+//	{
+//		printf("조건이 참일 경우 반복출력\n");
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int count = 0;
+//	while (count < 3)
+//	{
+//		printf("현재 count : %d\n", count);
+//		printf("count가 3보다 작은 동안 반복\n");
+//		count++;
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int count = 3;
+//	while (count > 0)
+//	{
+//		printf("현재 count : %d\n", count);
+//		printf("count가 0보다 큰 동안 반복\n");
+//		count--;
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int count = 6;
+//	while (count > 0)
+//	{
+//		printf("c");
+//		count--;
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int count = -10;
+//	while (count <= 0)
+//	{
+//		printf("%d\n", count);
+//		count++;
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int count = 0;
+//	while (count <= 100)
+//	{
+//		while (count % 5 == 0)
+//		{
+//			printf("%d\n", count);
+//			break;
+//		}
+//		count++;
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	char alphabet;
+//	while (1)
+//	{
+//		printf("알파벳을 입력해주세요(다른 것 입력시 다시입력) :");
+//		scanf("%c", &alphabet);
+//		if (alphabet >= 'a' && alphabet <= 'z')
+//		{
+//			printf("소문자를 입력하셨습니다.\n");
+//		}
+//		else if (alphabet >= 'A' && alphabet <= 'Z')
+//		{
+//			printf("대문자를 입력하셨습니다.\n");
+//		}
+//		else
+//		{
+//			continue;
+//		}
+//		printf("입력한 값 : %c\n", alphabet);
+//	}
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int number, total = 0;
+//	while (1)
+//	{
+//		printf("양수를 입력해주세요(0입력시 종료) :");
+//		scanf("%d", &number);
+//		if(number ==0)
+//		{
+//			break;
+//		}
+//		else if (number < 0)
+//		{
+//			continue;
+//		}
+//		total = total + number;
+//		printf("%d\n", total);
+//		
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	int number = 1, multi = 1;
+//	while (1)
+//	{
+//		multi = multi * number;
+//		if (multi >= 50000) {
+//			break;
+//		}
+//		number++;
+//		printf("지금까지 multi 값 : %d\n", multi);
+//	}
+//	printf("numer : %d", number);
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//	char alphabet = 'a';
+//	while (alphabet <= 'z')
+//	{
+//		if (alphabet == 'f')
+//		{
+//			alphabet++;
+//		}
+//		printf("%c\n", alphabet);
+//		alphabet++;
+//	}
+//	return 0;
+//}
+#include <stdio.h>
+int main()
+{
+	int input, player;
+	printf("1에서 3사이의 수만 입력하세요\n");
+	while (1)
+	{
+		printf("A :");
+		scanf("%d", &input);
+		player2 = player2 + player1;
+		printf("B :");
+		scanf("%d", &player2);
+		player1 = player1 + player2;
+		if (player1 || player2 >= 31)
+		{
+			break;
+		}
+	}
+	if (player1 >= 31)
+	{
+		printf("B가 이겼습니다!");
+	}
+	if (player2 >= 31)
+	{
+		printf("A가 이겼습니다!");
+	}
+}
